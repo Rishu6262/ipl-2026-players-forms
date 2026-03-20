@@ -160,44 +160,67 @@
 # st.divider()
 # st.markdown("<p style='text-align:center;'>Built with ❤️ using Streamlit & ML</p>", unsafe_allow_html=True)
 
+import streamlit as st
+
 st.markdown("""
 <style>
 
-body {
-    background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-}
-
-@keyframes gradientBG {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-}
-
-/* Glass Effect */
+/* 🔥 Animated Gradient Background */
 [data-testid="stAppViewContainer"] {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
 }
 
-/* Buttons */
+/* Animation Keyframes */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🔥 Title Glow Effect */
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 15px #00f7ff;
+}
+
+/* 🔥 Card Style */
+.stApp {
+    background: transparent;
+}
+
+[data-testid="stVerticalBlock"] {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+/* 🔥 Button Glow */
 .stButton>button {
     background: linear-gradient(90deg, #ff416c, #ff4b2b);
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 18px;
     transition: 0.3s;
 }
 
 .stButton>button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px #ff4b2b;
+    transform: scale(1.08);
+    box-shadow: 0px 0px 20px #ff4b2b;
 }
 
-/* Input Boxes */
+/* 🔥 Input Styling */
 input {
     border-radius: 10px !important;
+    border: none !important;
+}
+
+/* 🔥 Sidebar */
+[data-testid="stSidebar"] {
+    background: rgba(0, 0, 0, 0.6);
 }
 
 </style>
