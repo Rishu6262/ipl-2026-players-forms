@@ -225,3 +225,39 @@ input {
 
 </style>
 """, unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+
+/* Background animation */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Text visible */
+h1, h2, h3, h4, h5, h6, p, label {
+    color: white !important;
+}
+
+/* Button */
+.stButton>button {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: rgba(0,0,0,0.5);
+}
+
+</style>
+""", unsafe_allow_html=True)
