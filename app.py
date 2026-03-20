@@ -161,103 +161,56 @@
 # st.markdown("<p style='text-align:center;'>Built with ❤️ using Streamlit & ML</p>", unsafe_allow_html=True)
 
 import streamlit as st
+import base64
 
-st.markdown("""
-<style>
+# ================= BACKGROUND FUNCTION =================
+def set_bg():
+    with open("bg.jpg", "rb") as f:
+        data = f.read()
+    encoded = base64.b64encode(data).decode()
 
-/* 🔥 Animated Gradient Background */
-[data-testid="stAppViewContainer"] {
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-}
+    st.markdown(f"""
+    <style>
 
-/* Animation Keyframes */
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+    /* 🔥 Background Image */
+    [data-testid="stAppViewContainer"] {{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url("data:image/jpg;base64,{encoded}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
 
-/* 🔥 Title Glow Effect */
-h1 {
-    text-align: center;
-    color: white;
-    text-shadow: 0px 0px 15px #00f7ff;
-}
+    /* 🔥 Text visible */
+    h1, h2, h3, h4, h5, h6, p, label {{
+        color: white !important;
+    }}
 
-/* 🔥 Card Style */
-.stApp {
-    background: transparent;
-}
+    /* 🔥 Button style */
+    .stButton>button {{
+        background: linear-gradient(90deg, #ff416c, #ff4b2b);
+        color: white;
+        border-radius: 10px;
+        font-size: 18px;
+    }}
 
-[data-testid="stVerticalBlock"] {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 15px;
-    backdrop-filter: blur(8px);
-}
+    .stButton>button:hover {{
+        transform: scale(1.05);
+        box-shadow: 0px 0px 15px #ff4b2b;
+    }}
 
-/* 🔥 Button Glow */
-.stButton>button {
-    background: linear-gradient(90deg, #ff416c, #ff4b2b);
-    color: white;
-    border-radius: 12px;
-    font-size: 18px;
-    transition: 0.3s;
-}
+    /* 🔥 Input boxes */
+    input {{
+        border-radius: 10px !important;
+    }}
 
-.stButton>button:hover {
-    transform: scale(1.08);
-    box-shadow: 0px 0px 20px #ff4b2b;
-}
+    /* 🔥 Sidebar */
+    [data-testid="stSidebar"] {{
+        background: rgba(0,0,0,0.6);
+    }}
 
-/* 🔥 Input Styling */
-input {
-    border-radius: 10px !important;
-    border: none !important;
-}
+    </style>
+    """, unsafe_allow_html=True)
 
-/* 🔥 Sidebar */
-[data-testid="stSidebar"] {
-    background: rgba(0, 0, 0, 0.6);
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<style>
-
-/* Background animation */
-[data-testid="stAppViewContainer"] {
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Text visible */
-h1, h2, h3, h4, h5, h6, p, label {
-    color: white !important;
-}
-
-/* Button */
-.stButton>button {
-    background: linear-gradient(90deg, #ff416c, #ff4b2b);
-    color: white;
-    border-radius: 10px;
-}
-
-/* Sidebar */
-[data-testid="stSidebar"] {
-    background: rgba(0,0,0,0.5);
-}
-
-</style>
-""", unsafe_allow_html=True)
+# APPLY BACKGROUND
+set_bg()
