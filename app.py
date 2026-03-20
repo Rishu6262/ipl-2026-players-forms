@@ -163,7 +163,6 @@
 import streamlit as st
 import base64
 
-# ================= BACKGROUND FUNCTION =================
 def set_bg():
     with open("bg.jpg", "rb") as f:
         data = f.read()
@@ -172,45 +171,33 @@ def set_bg():
     st.markdown(f"""
     <style>
 
-    /* 🔥 Background Image */
+    /* ✅ IPL Background Image */
     [data-testid="stAppViewContainer"] {{
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
                     url("data:image/jpg;base64,{encoded}");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
     }}
 
-    /* 🔥 Text visible */
+    /* ✅ Text visible */
     h1, h2, h3, h4, h5, h6, p, label {{
         color: white !important;
     }}
 
-    /* 🔥 Button style */
+    /* ✅ Button */
     .stButton>button {{
         background: linear-gradient(90deg, #ff416c, #ff4b2b);
         color: white;
         border-radius: 10px;
-        font-size: 18px;
     }}
 
-    .stButton>button:hover {{
-        transform: scale(1.05);
-        box-shadow: 0px 0px 15px #ff4b2b;
-    }}
-
-    /* 🔥 Input boxes */
-    input {{
-        border-radius: 10px !important;
-    }}
-
-    /* 🔥 Sidebar */
+    /* ✅ Sidebar */
     [data-testid="stSidebar"] {{
-        background: rgba(0,0,0,0.6);
+        background: rgba(0,0,0,0.5);
     }}
 
     </style>
     """, unsafe_allow_html=True)
 
-# APPLY BACKGROUND
 set_bg()
