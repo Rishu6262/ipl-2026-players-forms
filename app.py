@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 # ================= CONFIG =================
-st.set_page_config(page_title="IPL 2026 Predictor", page_icon="🏏", layout="wide")
+st.set_page_config(page_title="IPL 2026 - Player Form Predictor", page_icon="🏏", layout="wide")
 
 # ================= LOAD MODEL =================
 @st.cache_resource
@@ -14,7 +14,8 @@ def load_model():
 model = load_model()
 
 # ================= TITLE =================
-st.markdown("<h1 style='text-align:center;'>🏏 IPL 2026 - Player Form Predictor</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;'>🏏 IPL 2026 - Batsman Form Predictor</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center;'>Predict whether a player is in form using ML</p>", unsafe_allow_html=True)
 st.divider()
 
 # ================= INPUT =================
@@ -23,20 +24,21 @@ st.subheader("📊 Enter Player Stats")
 col1, col2, col3 = st.columns(3)
 
 with col1:
+    sr = st.number_input("SR (Strike Rate Raw)", 0.0)
     runs = st.number_input("Runs", 0)
     balls = st.number_input("Balls", 1)
     fours = st.number_input("4s", 0)
     sixes = st.number_input("6s", 0)
-    matches = st.number_input("Matches", 0)
 
 with col2:
+    avg = st.number_input("Average (AVG)", 0.0)
+    matches = st.number_input("Matches", 0)
     innings = st.number_input("Innings", 0)
     not_out = st.number_input("Not Outs", 0)
-    avg = st.number_input("Average", 0.0)
-    strike_rate = st.number_input("Strike Rate", 0.0)
-    high_score = st.number_input("Highest Score", 0)
+    strike_rate = st.number_input("Strike Rate (SR calc)", 0.0)
 
 with col3:
+    high_score = st.number_input("Highest Score", 0)
     fifty = st.number_input("50s", 0)
     hundred = st.number_input("100s", 0)
     ducks = st.number_input("Ducks", 0)
@@ -44,13 +46,24 @@ with col3:
 # ================= PREDICT =================
 if st.button("🚀 Predict Form", use_container_width=True):
 
+    # 🔥 EXACT 14 FEATURES (MATCH TRAINING)
     input_data = np.array([[
-        strike_rate, runs, balls, fours, sixes,
-        avg, matches, innings, not_out,
-        high_score, fifty, hundred, ducks
+        sr,
+        runs,
+        balls,
+        fours,
+        sixes,
+        avg,
+        matches,
+        innings,
+        not_out,
+        strike_rate,
+        high_score,
+        fifty,
+        hundred,
+        ducks
     ]])
 
-    # DEBUG
     st.write("Input shape:", input_data.shape)
 
     prediction = model.predict(input_data)[0]
