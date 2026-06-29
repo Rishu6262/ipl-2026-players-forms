@@ -1,5 +1,14 @@
 # IPL 2025 Batters Performance Analysis
 
+---
+
+🚀 Live Demo
+
+Streamlit Application:
+https://ipl-2026-players-forms-ziwtknafkzfhzgpzwrfky8.streamlit.app/
+
+---
+
 ## Project Overview
 
 IPL 2025 Batters Performance Analysis is a data analytics project developed using Python to analyze and explore batting performances of players in the Indian Premier League (IPL) 2025 season.
