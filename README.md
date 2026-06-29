@@ -1,14 +1,5 @@
 # IPL 2025 Batters Performance Analysis
 
----
-
-🚀 Live Demo
-
-Streamlit Application:
-https://ipl-2026-players-forms-ziwtknafkzfhzgpzwrfky8.streamlit.app/
-
----
-
 ## Project Overview
 
 IPL 2025 Batters Performance Analysis is a data analytics project developed using Python to analyze and explore batting performances of players in the Indian Premier League (IPL) 2025 season.
@@ -16,6 +7,13 @@ IPL 2025 Batters Performance Analysis is a data analytics project developed usin
 The project focuses on evaluating player performance using batting statistics such as runs scored, batting average, strike rate, centuries, half-centuries, boundaries, and matches played. The analysis helps identify top-performing batters, compare player statistics, and uncover meaningful insights from the IPL 2025 batting dataset.
 
 This project demonstrates practical applications of data analysis, visualization, and sports analytics using Python.
+
+---
+
+## 🚀 Live Demo
+
+**Streamlit Application:**
+https://ipl-2026-players-forms-ziwtknafkzfhzgpzwrfky8.streamlit.app/
 
 ---
 
@@ -39,11 +37,11 @@ This project was developed to:
 
 ## Dataset Information
 
-Dataset Name: IPL 2025 Batters Dataset
+**Dataset Name:** IPL 2025 Batters Dataset
 
-Total Records: 412 Players
+**Total Records:** 412 Players
 
-Total Features: 14 Columns
+**Total Features:** 14 Columns
 
 ### Features
 
@@ -287,4 +285,4 @@ Possible future enhancements include:
 
 ## Conclusion
 
-The IPL 2025 Batters Performance Analysis project provides a detailed examination of batting performances throughout the IPL 2025 season. By analyzing runs, strike rates, averages, centuries, boundaries, and team contributions, the project generates valuable cricket insights while demonstrating practical data analysis and visualization skills using Python.
+The IPL 2025 Batters Performance Analysis project provides a detailed examination of batting performances throughout the IPL 2025 season. By analyzing runs, strike rates, batting averages, centuries, boundaries, and team contributions, the project generates meaningful cricket insights while demonstrating practical data analysis, visualization, and sports analytics skills using Python. The interactive Streamlit application further enhances the project by allowing users to explore player statistics and visualizations in an easy-to-use web interface, making it a strong portfolio project for aspiring data analysts and sports analytics enthusiasts.
