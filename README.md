@@ -295,7 +295,7 @@ Passionate about building AI-powered applications and solving real-world problem
 
 Connect with Me
 GitHub: https://github.com/Rishu6262
-LinkedIn: https://www.linkedin.com/in/rishu-gurjar/
+LinkedIn: https://www.linkedin.com/feed/
 
 ---
 
