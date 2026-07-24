@@ -181,37 +181,60 @@ Based on the analysis and visualizations, meaningful insights are extracted to e
 
 ---
 
-## Technologies Used
+# 🛠️ Technologies Used
 
-### Programming Language
+The project was developed using Python and industry-standard data analysis libraries to perform data preprocessing, exploratory data analysis (EDA), statistical visualization, and interactive dashboard development.
 
-* Python
+| Category | Technology | Purpose |
+|----------|------------|---------|
+| 🐍 Programming Language | Python | Core programming language for data analysis |
+| 📊 Data Analysis | Pandas | Data loading, cleaning, manipulation, and analysis |
+| 🔢 Numerical Computing | NumPy | Numerical operations and mathematical computations |
+| 📈 Data Visualization | Matplotlib | Creating static charts and visualizations |
+| 🎨 Statistical Visualization | Seaborn | Advanced statistical plots and analytical visualizations |
+| 🌐 Dashboard Development | Streamlit | Interactive web application for exploring batting statistics |
+| 💻 Development Environment | Jupyter Notebook / VS Code | Data analysis and project development |
+| 🔧 Version Control | Git & GitHub | Source code management and project hosting |
 
-### Libraries
+---
 
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
+# 🐍 Python Concepts Used
+
+This project demonstrates the practical implementation of essential Python programming and data analytics concepts used in real-world analytical workflows.
+
+| Concept | Description |
+|---------|-------------|
+| 📊 Data Analysis | Analyze batting performance using structured cricket data. |
+| 🧹 Data Cleaning | Handle missing values, duplicates, and inconsistent records. |
+| 📈 Exploratory Data Analysis (EDA) | Discover trends, distributions, and relationships within the dataset. |
+| 📉 Statistical Analysis | Evaluate batting metrics using descriptive statistics. |
+| 🗂️ Pandas Operations | Perform filtering, sorting, indexing, grouping, and aggregation. |
+| 🔍 Data Filtering | Extract player and team-specific information based on different conditions. |
+| 📑 Grouping & Aggregation | Summarize team-wise and player-wise batting statistics. |
+| 📊 Data Visualization | Create informative charts and graphs for better interpretation. |
+| 🎨 Plotting Graphs | Build bar charts, histograms, count plots, pie charts, and comparison plots using Matplotlib and Seaborn. |
+| 📋 Data Interpretation | Generate actionable insights from batting performance metrics. |
+| 📑 Report Generation | Present analytical findings in a structured and easy-to-understand format. |
+| 🌐 Dashboard Development | Build an interactive Streamlit application for visual data exploration. |
 
 ---
 
-## Python Concepts Used
+## 🚀 Skills Demonstrated
 
-This project demonstrates:
-
-* Data Analysis
-* Data Cleaning
-* Data Visualization
-* Statistical Analysis
-* Pandas Operations
-* Data Filtering
-* Grouping and Aggregation
-* Sorting
-* Plotting Graphs
-* Report Generation
-
----
+- 🐍 Python Programming
+- 📊 Data Analysis
+- 🧹 Data Cleaning & Preprocessing
+- 📈 Exploratory Data Analysis (EDA)
+- 📉 Statistical Analysis
+- 📊 Data Visualization
+- 🏏 Sports Analytics
+- 🗂️ Data Manipulation with Pandas
+- 🔢 Numerical Computing with NumPy
+- 🎨 Visualization with Matplotlib & Seaborn
+- 🌐 Interactive Dashboard Development using Streamlit
+- 📖 Data Storytelling
+- 💡 Insight Generation
+- 💼 Portfolio-Ready Analytics Project Development
 
 ## Project Structure
 
