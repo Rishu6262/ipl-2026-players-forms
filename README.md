@@ -37,47 +37,63 @@ This project was developed to:
 
 ---
 
-## Dataset Information
+# 📊 Dataset Information
 
-**Dataset Name:** IPL 2025 Batters Dataset
+The project utilizes the **IPL 2025 Batters Dataset**, which contains comprehensive batting statistics of players who participated in the **Indian Premier League (IPL) 2025** season. The dataset serves as the foundation for performing exploratory data analysis, statistical evaluation, and player performance comparison.
 
-**Total Records:** 412 Players
+### 📁 Dataset Summary
 
-**Total Features:** 14 Columns
+| Attribute | Details |
+|-----------|---------|
+| 🏏 Dataset Name | IPL 2025 Batters Dataset |
+| 👥 Total Records | 412 Players |
+| 📋 Total Features | 14 Columns |
+| 📊 Data Type | Structured Tabular Dataset |
+| 🎯 Domain | Sports Analytics / Cricket Analytics |
 
-### Features
+### 📌 Dataset Features
 
-* Player Name
-* Team
-* Runs
-* Matches
-* Innings
-* Not Outs
-* Highest Score (HS)
-* Batting Average (AVG)
-* Balls Faced (BF)
-* Strike Rate (SR)
-* Centuries (100s)
-* Half-Centuries (50s)
-* Fours (4s)
-* Sixes (6s)
+The dataset includes the following batting performance metrics:
 
----
+| Feature | Description |
+|---------|-------------|
+| 👤 Player Name | Name of the batter |
+| 🏏 Team | IPL franchise represented by the player |
+| 🏃 Runs | Total runs scored during the tournament |
+| 🎮 Matches | Number of matches played |
+| 🥎 Innings | Number of innings batted |
+| 🚫 Not Outs | Number of unbeaten innings |
+| 💯 Highest Score (HS) | Highest individual score |
+| 📈 Batting Average (AVG) | Average runs scored per dismissal |
+| 🎯 Balls Faced (BF) | Total balls faced |
+| ⚡ Strike Rate (SR) | Runs scored per 100 balls |
+| 💯 Centuries (100s) | Number of centuries scored |
+| 🏅 Half-Centuries (50s) | Number of half-centuries scored |
+| 4️⃣ Fours | Total boundaries (4s) |
+| 6️⃣ Sixes | Total maximums (6s) |
 
-## Project Objectives
-
-The primary objectives of this project are:
-
-* Analyze batting performance of IPL 2025 players
-* Identify top run scorers
-* Compare strike rates among players
-* Analyze batting averages
-* Find players with most centuries and half-centuries
-* Compare team-wise batting performances
-* Study boundary-hitting abilities
-* Generate insights using statistical analysis
+The dataset provides valuable information for evaluating player consistency, scoring efficiency, boundary-hitting ability, and overall batting performance throughout the IPL 2025 season.
 
 ---
+
+# 🎯 Project Objectives
+
+The primary objective of this project is to analyze the batting performances of IPL 2025 players using **Python-based data analytics techniques** and generate meaningful insights through statistical analysis and data visualization.
+
+This project aims to:
+
+- 🏏 Analyze the overall batting performance of IPL 2025 players.
+- 📊 Perform comprehensive Exploratory Data Analysis (EDA).
+- 🏆 Identify the tournament's top run scorers.
+- ⚡ Compare players based on their strike rates and scoring efficiency.
+- 📈 Evaluate batting averages to measure player consistency.
+- 💯 Identify players with the highest number of centuries and half-centuries.
+- 🎯 Analyze boundary-hitting abilities using fours and sixes statistics.
+- 👥 Compare batting performances across different IPL teams.
+- 📉 Discover trends and patterns using statistical analysis.
+- 📊 Create informative visualizations for better data interpretation.
+- 🌐 Develop an interactive Streamlit dashboard for user-friendly exploration.
+- 💼 Build a portfolio-ready sports analytics project showcasing practical data analysis skills.---
 
 ## How the Project Works
 
