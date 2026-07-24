@@ -301,24 +301,32 @@ Possible future enhancements include:
 
 ---
 
-👨‍💻 Author
+# 👨‍💻 Author
 
-Rishu Gurjar
+## Rishu Gurjar
 
-Python Developer | Machine Learning Enthusiast | Deep Learning Learner | Generative AI Enthusiast | Data Analyst
+🎓 **B.Tech Computer Science Engineering Student**
 
-Passionate about building AI-powered applications and solving real-world problems using Python, Machine Learning, Deep Learning, Data Analytics, and Generative AI. I enjoy creating end-to-end data science projects, exploring sports analytics, predictive modeling, and developing interactive applications with Streamlit.
+💻 **Python Developer | Data Analyst | Machine Learning Enthusiast | Deep Learning Learner | Generative AI Enthusiast**
 
----
-
-Connect with Me
-GitHub: https://github.com/Rishu6262
-LinkedIn: https://www.linkedin.com/feed/
+I am passionate about leveraging **Python**, **Data Analytics**, **Machine Learning**, **Deep Learning**, and **Generative AI** to solve real-world problems through data-driven solutions. I enjoy building end-to-end analytics and machine learning applications, exploring sports analytics, predictive modeling, and creating interactive dashboards with **Streamlit**. My goal is to continuously develop practical, scalable, and impactful projects that demonstrate strong analytical thinking and software development skills.
 
 ---
 
-## Conclusion
+## 📬 Connect with Me
 
-The IPL 2025 Batters Performance Analysis project provides a detailed examination of batting performances throughout the IPL 2025 season. By analyzing runs, strike rates, batting averages, centuries, boundaries, and team contributions, the project generates meaningful cricket insights while demonstrating practical data analysis, visualization, and sports analytics skills using Python. The interactive Streamlit application further enhances the project by allowing users to explore player statistics and visualizations in an easy-to-use web interface, making it a strong portfolio project for aspiring data analysts and sports analytics enthusiasts.
+- 💻 **GitHub:** https://github.com/Rishu6262
+- 💼 **LinkedIn:** https://www.linkedin.com/in/rishu-gurjar-58072a333/
+- 📊 **Kaggle:** https://www.kaggle.com/rishugurjar
+
+⭐ If you found this project useful, consider giving it a **Star ⭐** on GitHub. Your support is greatly appreciated!
 
 ---
+
+# 📌 Conclusion
+
+The **IPL 2025 Batters Performance Analysis** project demonstrates the practical application of **Python-based Data Analytics** to evaluate and visualize player performances from the **Indian Premier League (IPL) 2025** season. Through comprehensive **data cleaning**, **exploratory data analysis (EDA)**, **statistical analysis**, and **data visualization**, the project uncovers meaningful insights into batting performance, scoring consistency, strike rates, boundary-hitting ability, and team contributions.
+
+The interactive **Streamlit dashboard** enhances the overall user experience by enabling dynamic exploration of player statistics through intuitive charts and visualizations. This project not only showcases technical proficiency in **Python**, **Pandas**, **NumPy**, **Matplotlib**, **Seaborn**, and **Streamlit**, but also demonstrates the ability to transform raw sports data into actionable insights.
+
+Overall, this project serves as a strong portfolio piece for aspiring **Data Analysts**, **Python Developers**, **Business Intelligence Analysts**, and **Machine Learning Engineers**, highlighting practical experience in **sports analytics**, **data storytelling**, and end-to-end analytical application development.
